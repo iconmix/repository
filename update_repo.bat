@@ -1,7 +1,11 @@
-python.exe update_repo.py d:\IconMix\skins-addons\script.iconmixtools d:\IconMix\skins-addons\resource.uisounds.iconmix  d:\IconMix\skins-addons\skin.iconmix-jarvis d:\IconMix\skins-addons\skin.iconmix-krypton d:\IconMix\skins-addons\skin.iconmix-leia
+
+git pull
+
+python update_repo.py ..\skins-addons\resource.uisounds.iconmix ..\skins-addons\script.iconmixtools ..\skins-addons\skin.iconmix-jarvis ..\skins-addons\skin.iconmix-krypton ..\skins-addons\skin.iconmix-leia
+python pdate-directory-structure.py
 
 git add .
-git commit -a -m "mise a jour %date%"
-git push > lastgit.txt
+git commit -a -m "update repo"
+git push
 
 pause
