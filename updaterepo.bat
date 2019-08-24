@@ -3,3 +3,4 @@ git add .
 git commit -a -m "mise a jour"
 git push > lastgit.txt
 
+pause
