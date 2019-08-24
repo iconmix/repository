@@ -9,7 +9,7 @@
     <description lang="en">Iconmix GUI sounds</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="19.03.180">
+</addon><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="19.04.110">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 		<import addon="xbmc.addon" version="16.0.0" />
@@ -72,13 +72,13 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.03.170">
+</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.04.110">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
 		<import addon="script.skinshortcuts" version="1.0.6" />
 		<import addon="script.skin.helper.service" version="1.0.0" />
-		<import addon="script.iconmixtools" version="19.03.160" />
+		<import addon="script.iconmixtools" version="19.04.110" />
 		<import addon="resource.images.studios.white" version="0.0.5" />
 		<import addon="resource.images.languageflags.colour" version="0.0.4" />		
 		<import addon="resource.images.recordlabels.white" version="0.0.6" />
@@ -109,13 +109,13 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="19.03.060">
+</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="19.04.110">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
 		<import addon="script.skinshortcuts" version="1.0.6" />
 		<import addon="script.skin.helper.service" version="1.0.0" />
-		<import addon="script.iconmixtools" version="19.03.060" />
+		<import addon="script.iconmixtools" version="19.04.110" />
 		<import addon="resource.images.studios.white" version="0.0.5" />
 		<import addon="resource.images.languageflags.colour" version="0.0.4" />		
 		<import addon="resource.images.recordlabels.white" version="0.0.6" />
