@@ -1,7 +1,7 @@
 
 git pull
 
-python update_repo.py ..\skins-addons\resource.uisounds.iconmix ..\skins-addons\script.iconmixtools ..\skins-addons\skin.iconmix-jarvis ..\skins-addons\skin.iconmix-krypton ..\skins-addons\skin.iconmix-leia
+python update_repo.py d:\iconmix\skins-addons\resource.uisounds.iconmix d:\iconmix\skins-addons\script.iconmixtools d:\iconmix\skins-addons\skin.iconmix-jarvis d:\iconmix\skins-addons\skin.iconmix-krypton d:\iconmix\skins-addons\skin.iconmix-leia
 python pdate-directory-structure.py
 
 git add .
