@@ -31,4 +31,41 @@
 			<fanart>fanart.jpg</fanart>	
 		</assets>
 	</extension>
+</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.08.240">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0" />
+		<import addon="service.library.data.provider" version="0.1.5" />
+		<import addon="script.skinshortcuts" version="1.0.6" />
+		<import addon="script.skin.helper.service" version="1.0.0" />
+		<import addon="script.iconmixtools" version="19.08.240" />
+		<import addon="resource.images.studios.white" version="0.0.5" />
+		<import addon="resource.images.languageflags.colour" version="0.0.4" />		
+		<import addon="resource.images.recordlabels.white" version="0.0.6" />
+		
+		
+	</requires>
+	<extension debugging="false" point="xbmc.gui.skin">
+			<res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_US">A Icon/Text Skin</summary>
+		<news>
+		 - Indicateur de progression 
+		 - Possibilité d'Afficher uniquement un bouton pour les acteurs...
+		 - Correction du bug des studios des albums
+		 - Intégration au script de la date de diffusion des prochains épisodes des séries sans l'addon nextaired
+		 - Ajout du calendrier des diffusions des épisodes dans la fenetre d'information
+		  </news>
+		<description lang="en_US">Kodi skin using Icon/Text presentation and providing some nice extended features</description>
+		<platform>all</platform>
+		<license>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) United States License</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=290236</forum>
+		<website>---</website>
+		<source>-</source>		
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot01.jpg</screenshot>			
+		</assets>
+	</extension>
 </addon></addons>

@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<<<<<<< HEAD
 	<addon id="script.iconmixtools" name="script.iconmixtools" version="19.08.242" provider-name="telexxingou">
-=======
-<<<<<<< HEAD
-	<addon id="script.iconmixtools" name="script.iconmixtools" version="19.08.240" provider-name="telexxingou">
-=======
-	<addon id="script.iconmixtools" name="script.iconmixtools" version="19.04.110" provider-name="telexxingou">
->>>>>>> 7af0e46b0d753f113394865cdc57018c89bcca9a
->>>>>>> 30d9a584e67cccaf819a429beb9beed00d0b7fb3
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="xbmc.addon" version="16.0.0"/>
