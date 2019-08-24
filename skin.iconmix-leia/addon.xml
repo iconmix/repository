@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.iconmix-leia" version="19.04.110" name="iconmix (Leia)" provider-name="telexxingou">
+<addon id="skin.iconmix-leia" version="19.03.060" name="iconmix (Leia)" provider-name="telexxingou">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider" version="0.1.5"/>
 		<import addon="script.skinshortcuts" version="1.0.6"/>
 		<import addon="script.skin.helper.service" version="1.0.0"/>
-		<import addon="script.iconmixtools" version="19.04.110"/>
+		<import addon="script.iconmixtools" version="19.03.060"/>
 		<import addon="resource.images.studios.white" version="0.0.5"/>
 		<import addon="resource.images.languageflags.colour" version="0.0.4"/>		
 		<import addon="resource.images.recordlabels.white" version="0.0.6"/>
