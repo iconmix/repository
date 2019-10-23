@@ -1,4 +1,5 @@
-python update_repo.py d:\iconmix\skins-addons\script.iconmixtools d:\iconmix\skins-addons\skin.iconmix-krypton d:\iconmix\skins-addons\skin.iconmix-leia d:\iconmix\skins-addons\resource.uisounds.iconmix
+python update_repo.py c:\iconmix\skins-addons\script.iconmixtools c:\iconmix\skins-addons\skin.iconmix-krypton c:\iconmix\skins-addons\resource.uisounds.iconmix
+rem c:\iconmix\skins-addons\skin.iconmix-leia 
 rem python pdate-directory-structure.py
 
 git add .
