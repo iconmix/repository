@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.iconmix-krypton" version="19.10.180" name="iconmix (Krypton)" provider-name="telexxingou">
+<addon id="skin.iconmix-krypton" version="19.10.270" name="iconmix (Krypton)" provider-name="telexxingou">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="service.library.data.provider" version="0.1.5"/>
