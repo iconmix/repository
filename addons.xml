@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="20.03.240">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0" />
+		<import addon="xbmc.addon" version="16.0.0" />
+<import addon="script.module.simplejson" version="3.3.0" />
+        
+
+		
+		
+	</requires>
+    
+  <extension library="plugin.py" point="xbmc.python.script">
+		<provides>executable</provides>
+	</extension>
+   <extension library="plugin.py" point="xbmc.python.pluginsource" />
+   <extension library="service.py" point="xbmc.service" start="login" />
+	
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">script.iconmixtools</summary>
+        <summary lang="en">tools for IconMix skin</summary>
+        <description>provides some tools functions for my IconMix( Jarvis/Krypton/Leia) skin</description>
+		<language />
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum />
+		<website />
+		<source>-</source>
+			<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>	
+		</assets>
+	</extension>
+</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.10.290">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0" />
+		<import addon="service.library.data.provider" version="0.1.5" />
+		<import addon="script.skinshortcuts" version="1.0.6" />
+		<import addon="script.skin.helper.service" version="1.0.0" />
+		<import addon="script.iconmixtools" version="19.10.290" />
+		<import addon="resource.images.studios.white" version="0.0.5" />
+		<import addon="resource.images.languageflags.colour" version="0.0.4" />		
+		<import addon="resource.images.recordlabels.white" version="0.0.6" />
+		
+		
+	</requires>
+	<extension debugging="false" point="xbmc.gui.skin">
+			<res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_US">A Icon/Text Skin</summary>
+		<news>
+		 - Indicateur de progression 
+		 - Possibilité d'Afficher uniquement un bouton pour les acteurs...
+		 - Correction du bug des studios des albums
+		 - Intégration au script de la date de diffusion des prochains épisodes des séries sans l'addon nextaired
+		 - Ajout du calendrier des diffusions des épisodes dans la fenetre d'information
+		  </news>
+		<description lang="en_US">Kodi skin using Icon/Text presentation and providing some nice extended features</description>
+		<platform>all</platform>
+		<license>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) United States License</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=290236</forum>
+		<website>---</website>
+		<source>-</source>		
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot01.jpg</screenshot>			
+		</assets>
+	</extension>
+</addon><addon id="resource.uisounds.iconmix" name="Iconmix UI Sounds" provider-name="takoi" version="18.04.231">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0" />
+  </requires>
+  <extension point="kodi.resource.uisounds" />
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">Iconmix GUI sounds</summary>
+    <description lang="en">Iconmix GUI sounds</description>
+    <platform>all</platform>
+  </extension>
+</addon></addons>
