@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="script.iconmixtools" name="script.iconmixtools" version="20.03.241" provider-name="telexxingou">
+	<addon id="script.iconmixtools" name="script.iconmixtools" version="20.03.242" provider-name="telexxingou">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="xbmc.addon" version="16.0.0"/>
@@ -21,6 +21,9 @@
         <summary lang="en">tools for IconMix skin</summary>
         <description>provides some tools functions for my IconMix( Jarvis/Krypton/Leia) skin</description>
 		<language></language>
+		<news>
+		  20.03.242 : corrections bandes-annonces YOUTUBE
+		</news>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
 		<forum></forum>
