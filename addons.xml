@@ -3,12 +3,7 @@
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 		<import addon="xbmc.addon" version="16.0.0" />
-<import addon="script.module.simplejson" version="3.3.0" />
-        
-
-		
-		
-	</requires>
+<import addon="script.module.simplejson" version="3.3.0" /></requires>
     
   <extension library="plugin.py" point="xbmc.python.script">
 		<provides>executable</provides>
