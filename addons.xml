@@ -1,30 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="20.03.241">
+<addons><addon id="skin.aeon.miro.nox.5" name="Aeon Miro Nox Krypton" provider-name="BigNoid_Roura97311" version="6.0.68">
 	<requires>
-		<import addon="xbmc.python" version="2.24.0" />
-		<import addon="xbmc.addon" version="16.0.0" />
-<import addon="script.module.simplejson" version="3.3.0" /></requires>
-    
-  <extension library="plugin.py" point="xbmc.python.script">
-		<provides>executable</provides>
-	</extension>
-   <extension library="plugin.py" point="xbmc.python.pluginsource" />
-   <extension library="service.py" point="xbmc.service" start="login" />
-	
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">script.iconmixtools</summary>
-        <summary lang="en">tools for IconMix skin</summary>
-        <description>provides some tools functions for my IconMix( Jarvis/Krypton/Leia) skin</description>
-		<language />
-		<platform>all</platform>
-		<license>GPL v2.0</license>
-		<forum />
-		<website />
-		<source>-</source>
-			<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>	
-		</assets>
+		<import addon="xbmc.gui" version="5.12.0" />
+		<import addon="script.grab.fanart" version="0.14.1" />
+		<import addon="script.skinshortcuts" version="1.0.17" />
+		<import addon="service.library.data.provider" version="0.3.0" />
+		<import addon="resource.images.studios.white" version="0.0.10" />
+		<import addon="resource.images.recordlabels.white" version="0.0.7" />
+		<import addon="script.skin.helper.colorpicker" version="1.0.11" />
+		
+		
+	</requires>
+	<extension debugging="false" effectslowdown="0.75" point="xbmc.gui.skin">
+		<res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+		<res aspect="21:9" default="false" folder="1080i" height="1080" width="2560" />
 	</extension>
 </addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.10.290">
 	<requires>
