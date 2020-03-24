@@ -68,7 +68,7 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="resource.uisounds.iconmix" name="Iconmix UI Sounds" provider-name="takoi" version="18.04.231">
+</addon><addon id="resource.uisounds.iconmix" name="Iconmix UI Sounds" provider-name="takoi" version="20.03.231">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
