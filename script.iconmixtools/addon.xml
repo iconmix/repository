@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<<<<<<< HEAD
+
 	<addon id="script.iconmixtools" name="script.iconmixtools" version="20.03.240" provider-name="telexxingou">
-=======
-	<addon id="script.iconmixtools" name="script.iconmixtools" version="19.10.290" provider-name="telexxingou">
->>>>>>> add2830596fe11bd7edbf02efed08e7094b7b4e2
+
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="xbmc.addon" version="16.0.0"/>
