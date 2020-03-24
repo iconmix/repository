@@ -147,10 +147,10 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
         #check current version
         cur_metadata_path = os.path.join(addon_target_folder, INFO_BASENAME)
         if os.path.exists(cur_metadata_path):
-            print "process : (%s)" %cur_metadata_path
+            print ("process : (%s)" %cur_metadata_path)
             cur_metadata = parse_metadata(cur_metadata_path)
             if cur_metadata.version == addon_metadata.version:
-                print "Addon %s already has version %s on the repo, skipping..." % (addon_metadata.id, addon_metadata.version)
+                print ("Addon %s already has version %s on the repo, skipping..." % (addon_metadata.id, addon_metadata.version))
                 return cur_metadata
         
         #if skin addon, build textures...
@@ -178,7 +178,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
             addon_location, addon_target_folder, addon_metadata)
 
     except Exception as exc:
-        print format_exc(sys.exc_info())
+        print (format_exc(sys.exc_info()))
         raise exc
         
     return addon_metadata
@@ -263,11 +263,11 @@ def do_unzip(zip_path, targetdir):
             shutil.copyfileobj(zip_file.open(fileinfo.filename), outputfile)
             outputfile.close()
     zip_file.close()
-    print "UNZIP DONE of file %s" %(zip_path)
+    print ("UNZIP DONE of file %s" %(zip_path))
     
 def fetch_addon(addon_location, target_folder, result_slot, temp_folder):
     try:
-        print "Processing %s" %addon_location
+        print ("Processing %s" %addon_location)
         if is_url(addon_location):
             addon_metadata = fetch_addon_from_git(
                 addon_location, target_folder, temp_folder)
@@ -295,7 +295,7 @@ def cleanup_dir(dirname):
     cmdargs = '/c rd /s /q %s' % dirname
     subprocess.Popen( ('cmd', cmdargs )).wait()
     while os.path.isdir(dirname):
-        print "wait for folder deletion"
+        print ("wait for folder deletion")
         time.sleep(1)
 
     
