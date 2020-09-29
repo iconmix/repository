@@ -12,7 +12,7 @@ import collections
 import gzip
 import hashlib
 import io
-import os
+import os,sys
 import re
 import shutil
 import sys
@@ -141,6 +141,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
     try:
         addon_location = os.path.abspath(raw_addon_location)
         metadata_path = os.path.join(addon_location, INFO_BASENAME)
+        print ("METADATA : %s" %metadata_path)
         addon_metadata = parse_metadata(metadata_path)
         addon_target_folder = os.path.join(target_folder, addon_metadata.id)
         
@@ -292,10 +293,15 @@ def get_addon_worker(addon_location, target_folder, temp_folder):
 
 def cleanup_dir(dirname):
     #cleanup directory from disk
-    cmdargs = '/c rd /s /q %s' % dirname
-    subprocess.Popen( ('cmd', cmdargs )).wait()
+    cmdargs = '-rf %s' %dirname
+    print ('---> %s' %cmdargs)
+    os.system('rm -rf %s' %dirname)
     while os.path.isdir(dirname):
+<<<<<<< HEAD
+        print "wait for folder deletion : %s" %dirname
+=======
         print ("wait for folder deletion")
+>>>>>>> 8fcc1d7a256c4e16a597db5d11aa6754175aa46c
         time.sleep(1)
 
     
