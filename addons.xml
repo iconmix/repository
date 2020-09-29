@@ -36,13 +36,13 @@
     <description lang="en">Iconmix GUI sounds</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.08.240">
+</addon><addon id="skin.iconmix-krypton" name="iconmix (Krypton)" provider-name="telexxingou" version="19.10.290">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
 		<import addon="script.skinshortcuts" version="1.0.6" />
 		<import addon="script.skin.helper.service" version="1.0.0" />
-		<import addon="script.iconmixtools" version="19.08.240" />
+		<import addon="script.iconmixtools" version="19.10.290" />
 		<import addon="resource.images.studios.white" version="0.0.5" />
 		<import addon="resource.images.languageflags.colour" version="0.0.4" />		
 		<import addon="resource.images.recordlabels.white" version="0.0.6" />
@@ -58,8 +58,8 @@
 		 - Indicateur de progression 
 		 - Possibilité d'Afficher uniquement un bouton pour les acteurs...
 		 - Correction du bug des studios des albums
-		 - Intégration au script de la date de diffusion des prochains épisodes des séries sans l'addon nextaired
-		 - Ajout du calendrier des diffusions des épisodes dans la fenetre d'information
+		 - Integration au script de la date de diffusion des prochains episodes des series sans l'addon nextaired
+		 - Ajout du calendrier des diffusions des episodes dans la fenetre d'information
 		  </news>
 		<description lang="en_US">Kodi skin using Icon/Text presentation and providing some nice extended features</description>
 		<platform>all</platform>
@@ -73,7 +73,7 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.291">
+</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.292">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />

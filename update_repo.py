@@ -140,6 +140,8 @@ def fetch_addon_from_git(addon_location, target_folder, temp_folder):
 def fetch_addon_from_folder(raw_addon_location, target_folder):
     try:
         addon_location = os.path.abspath(raw_addon_location)
+        print ("addon location = %s" %addon_location)
+        
         metadata_path = os.path.join(addon_location, INFO_BASENAME)
         print ("METADATA : %s" %metadata_path)
         addon_metadata = parse_metadata(metadata_path)
@@ -166,7 +168,9 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
     
         with zipfile.ZipFile(
                 archive_path, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-            for (root, dirs, files) in os.walk(addon_location.decode("utf-8"),followlinks=True):
+            for (root, dirs, files) in os.walk(addon_location,followlinks=True):
+                #print ("Root : %s *** dirs: %s *** Files:%s" %(root,dirs,files))
+                print ("Root : %s" %(root))
                 relative_root = os.path.join(
                     addon_metadata.id,
                     os.path.relpath(root, addon_location))
