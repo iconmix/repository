@@ -297,11 +297,8 @@ def cleanup_dir(dirname):
     print ('---> %s' %cmdargs)
     os.system('rm -rf %s' %dirname)
     while os.path.isdir(dirname):
-<<<<<<< HEAD
         print "wait for folder deletion : %s" %dirname
-=======
         print ("wait for folder deletion")
->>>>>>> 8fcc1d7a256c4e16a597db5d11aa6754175aa46c
         time.sleep(1)
 
     

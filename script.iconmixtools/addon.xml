@@ -1,38 +1,29 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="script.iconmixtools" name="script.iconmixtools" version="20.06.170" provider-name="telexxingou">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="xbmc.addon" version="16.0.0"/>
-<import addon="script.module.simplejson" version="3.3.0"/>
-        
-
-		
-		
-	</requires>
-    
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.iconmixtools" version="20.03.240" name="script.iconmixtools" provider-name="telexxingou">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="xbmc.addon" version="16.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
   <extension point="xbmc.python.script" library="plugin.py">
-		<provides>executable</provides>
-	</extension>
-   <extension point="xbmc.python.pluginsource" library="plugin.py" />
-   <extension library="service.py" point="xbmc.service" start="login" />
-	
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">script.iconmixtools</summary>
-        <summary lang="en">tools for IconMix skin</summary>
-        <description>provides some tools functions for my IconMix( Jarvis/Krypton/Leia) skin</description>
-		<language></language>
-		<news>
-		  20.03.250 : corrections sur iconmixtools
-		  20.03.242 : corrections bandes-annonces YOUTUBE
-		</news>
-		<platform>all</platform>
-		<license>GPL v2.0</license>
-		<forum></forum>
-		<website></website>
-		<source>-</source>
-			<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>	
-		</assets>
-	</extension>
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.pluginsource" library="plugin.py" />
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">script.iconmixtools</summary>
+    <summary lang="en">tools for IconMix skin</summary>
+    <description>provides some tools functions for my IconMix( Jarvis.Krypton.Leia) skin</description>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL v2.0</license>
+    <forum></forum>
+    <website></website>
+    <news>v20.030.240 [fix] youtube trailer</news>
+    <source>-</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
