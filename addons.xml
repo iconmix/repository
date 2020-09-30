@@ -73,7 +73,7 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.300">
+</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.301">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
