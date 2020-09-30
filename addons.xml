@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="20.03.240">
+<addons><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="20.09.300">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
     <import addon="xbmc.addon" version="16.0.0" />
@@ -73,7 +73,7 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.292">
+</addon><addon id="skin.iconmix-leia" name="iconmix (Leia)" provider-name="telexxingou" version="20.09.300">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
