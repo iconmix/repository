@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.iconmix-leia" version="20.10.110" name="iconmix (Leia)" provider-name="telexxingou">
+<addon id="skin.iconmix-leia" version="20.10.180" name="iconmix (Leia)" provider-name="telexxingou">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="service.library.data.provider" version="0.1.5"/>
