@@ -304,6 +304,7 @@ def cleanup_dir(dirname):
         print "wait for folder deletion : %s" %dirname
         print ("wait for folder deletion")
         time.sleep(1)
+    print ("okkkkkkkkkkkkkkkkkkkkkkkkk")
 
     
 def create_repository(
@@ -331,8 +332,8 @@ def create_repository(
     temp_folder = os.path.abspath(os.path.join(target_folder, "temp"))
     cleanup_dir(temp_folder)
     if not os.path.isdir(temp_folder):
-        os.makedirs(temp_folder)
-
+        os.system("mkdir %s" %temp_folder)
+    print ("reperoire temp vide OK")
     # Fetch all the add-on sources in parallel.
     workers = [
         get_addon_worker(addon_location, target_folder, temp_folder)
@@ -376,6 +377,7 @@ def create_repository(
         
     #cleanup temp files
     cleanup_dir(temp_folder)
+    print "ici"
 
 def main():
     parser = argparse.ArgumentParser(
@@ -428,8 +430,7 @@ def main():
     checksum_path = (
         os.path.abspath(args.checksum) if args.checksum is not None
         else os.path.join(data_path, 'addons.xml.md5'))
-    create_repository(
-        args.addon, data_path, info_path, checksum_path, args.compressed)
+    create_repository(args.addon, data_path, info_path, checksum_path, args.compressed)
 
 
 if __name__ == "__main__":
