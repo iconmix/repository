@@ -1,0 +1,30 @@
+<views>
+	<view id="List" value="55" languageid="31801"  type="all"/>
+	<view id="Onglets" value="905"  languageid="31802"  type="videos,movies,tvshows,setmovies,sets,episodes,artists" />
+	<view id="Liste sobre" value="508"  languageid="31800"  type="videos,movies,tvshows,setmovies,sets,episodes" />
+	<view id="List Trio" value="557" languageid="31834"  type="movies,setmovies,sets,tvshows" />
+	<view id="Pochettes" value="512" languageid="31838"  type="movies,setmovies,sets,tvshows" />
+	<view id="List detaillee" value="900" languageid="31819"  type="movies,setmovies,sets,tvshows,episodes,artists,albums" />
+	<view id="List Curved" value="906" languageid="31832"  type="all" />
+	<view id="Poster Large fixe" value="555"  languageid="31829"  type="genres,movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Poster Large enroule" value="556" languageid="31830"  type="genres,movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Poster enroule" value="551"  languageid="31805"  type="videos,genres,movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Poster fixe" value="552" languageid="31806"  type="videos,genres,movies,tvshows,musicvideos,seasons,setmovies,sets,albums,artists" />
+	<view id="Poster enroulé vertical" value="553"  languageid="31807"  type="videos,movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Poster fixe vertical" value="554" languageid="31808"  type="videos,movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Paysage" value="52" languageid="31810"  type="videos,movies,tvshows,musicvideos,seasons,setmovies,sets,episodes" />
+	<view id="Fanart" value="504"  languageid="31811"  type="movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Bannieres" value="511" languageid="31812"  type="artists,tvshows,musicvideos" />
+	<view id="Banner Wall" value="514" languageid="31831"  type="artists,tvshows,musicvideos" />
+	<view id="Banner vertical" value="513"  languageid="31813"  type="artists,tvshows,musicvideos,setmovies,sets,movies" />
+	<view id="Banner Poster" value="510" languageid="31814"  type="artists,tvshows,musicvideos" />
+	<view id="Logo" value="56"  languageid="31817"  type="movies,tvshows,musicvideos,setmovies,sets,!music,!artists,!albums,all" />
+	<view id="NetflixPoster" value="562" languageid="31835"  type="movies,tvshows,musicvideos,setmovies,sets" />
+	<view id="NetflixThumb" value="563" languageid="31836"  type="movies,tvshows,musicvideos,setmovies,sets,episodes" />
+	<view id="Gallery Square" value="58" languageid="31822"  type="all,!videos,!genres,!movies,!tvshows,!musicvideos,!seasons,!setmovies,!sets,!episodes,!artists,!albums" />
+	<view id="Panel Square" value="559" languageid="31823"  type="artists,albums" />
+	<view id="Music Box" value="561" languageid="31824"  type="artists,albums" />
+	<view id="3D" value="584" languageid="31825"  type="movies,tvshows,musicvideos,seasons,setmovies,sets" />
+	<view id="Wall" value="585" languageid="31826"  type="videos,genres,movies,tvshows,musicvideos,seasons,setmovies,sets,episodes" />
+	<view id="DiscArt" value="586" languageid="31827"  type="movies,tvshows,musicvideos,setmovies,sets" />
+</views>

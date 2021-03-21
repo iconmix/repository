@@ -1,0 +1,31 @@
+<settings>
+    
+    
+    <!-- Random fanart delay -->
+    <setting id="SkinHelper.RandomFanartDelay" value="5" label="5 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="SkinHelper.RandomFanartDelay" value="10" label="10 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="SkinHelper.RandomFanartDelay" value="15" label="15 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="SkinHelper.RandomFanartDelay" value="20" label="20 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="SkinHelper.RandomFanartDelay" value="30" label="30 $LOCALIZE[31231]" condition="" icon="" description="" default="true"/>
+    <setting id="SkinHelper.RandomFanartDelay" value="60" label="60 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    
+    <!-- Extra fanart delay -->
+    <setting id="extrafanartdelay" value="5" label="5 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="6" label="6 $LOCALIZE[31231]" condition="" icon="" description="" default="true"/>
+    <setting id="extrafanartdelay" value="8" label="8 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="10" label="10 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="15" label="15 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="20" label="20 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="30" label="30 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="extrafanartdelay" value="60" label="60 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    
+    
+    <!-- widget rotate delay -->
+    <setting id="widgets_rotate_delay" value="5" label="5 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="widgets_rotate_delay" value="10" label="10 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="widgets_rotate_delay" value="15" label="15 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="widgets_rotate_delay" value="20" label="20 $LOCALIZE[31231]" condition="" icon="" description="" default="true"/>
+    <setting id="widgets_rotate_delay" value="30" label="30 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    <setting id="widgets_rotate_delay" value="60" label="60 $LOCALIZE[31231]" condition="" icon="" description=""/>
+    
+</settings>
