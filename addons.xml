@@ -26,7 +26,7 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
-</addon><addon id="skin.iconmix-matrix" name="iconmix (Matrix)" provider-name="telexxingou" version="20.10.180">
+</addon><addon id="skin.iconmix-matrix" name="iconmix (Matrix)" provider-name="telexxingou" version="21.03.210">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="service.library.data.provider" version="0.1.5" />
