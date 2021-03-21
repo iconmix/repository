@@ -12,7 +12,7 @@ import collections
 import gzip
 import hashlib
 import io
-import os,sys
+import os
 import re
 import shutil
 import sys
@@ -140,17 +140,14 @@ def fetch_addon_from_git(addon_location, target_folder, temp_folder):
 def fetch_addon_from_folder(raw_addon_location, target_folder):
     try:
         addon_location = os.path.abspath(raw_addon_location)
-        print ("addon location = %s" %addon_location)
-        
         metadata_path = os.path.join(addon_location, INFO_BASENAME)
-        print ("METADATA : %s" %metadata_path)
         addon_metadata = parse_metadata(metadata_path)
         addon_target_folder = os.path.join(target_folder, addon_metadata.id)
-        
+        print ('%s \n*%s \n*%s' %(addon_location,metadata_path,addon_target_folder))
         #check current version
         cur_metadata_path = os.path.join(addon_target_folder, INFO_BASENAME)
         if os.path.exists(cur_metadata_path):
-            print ("process : (%s)" %cur_metadata_path)
+            print ("process >: (%s)" %cur_metadata_path)
             cur_metadata = parse_metadata(cur_metadata_path)
             if cur_metadata.version == addon_metadata.version:
                 print ("Addon %s already has version %s on the repo, skipping..." % (addon_metadata.id, addon_metadata.version))
@@ -168,9 +165,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
     
         with zipfile.ZipFile(
                 archive_path, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-            for (root, dirs, files) in os.walk(addon_location,followlinks=True):
-                #print ("Root : %s *** dirs: %s *** Files:%s" %(root,dirs,files))
-                print ("Root : %s" %(root))
+            for (root, dirs, files) in os.walk(addon_location.decode("utf-8")):
                 relative_root = os.path.join(
                     addon_metadata.id,
                     os.path.relpath(root, addon_location))
@@ -277,6 +272,7 @@ def fetch_addon(addon_location, target_folder, result_slot, temp_folder):
             addon_metadata = fetch_addon_from_git(
                 addon_location, target_folder, temp_folder)
         elif os.path.isdir(addon_location):
+            print ("location : %s" %addon_location)
             addon_metadata = fetch_addon_from_folder(
                 addon_location, target_folder)
         elif os.path.isfile(addon_location):
@@ -297,14 +293,11 @@ def get_addon_worker(addon_location, target_folder, temp_folder):
 
 def cleanup_dir(dirname):
     #cleanup directory from disk
-    cmdargs = '-rf %s' %dirname
-    print ('---> %s' %cmdargs)
+    #cmdargs = '/c rd /s /q %s' % dirname
     os.system('rm -rf %s' %dirname)
     while os.path.isdir(dirname):
-        print "wait for folder deletion : %s" %dirname
         print ("wait for folder deletion")
         time.sleep(1)
-    print ("okkkkkkkkkkkkkkkkkkkkkkkkk")
 
     
 def create_repository(
@@ -332,8 +325,8 @@ def create_repository(
     temp_folder = os.path.abspath(os.path.join(target_folder, "temp"))
     cleanup_dir(temp_folder)
     if not os.path.isdir(temp_folder):
-        os.system("mkdir %s" %temp_folder)
-    print ("reperoire temp vide OK")
+        os.makedirs(temp_folder)
+
     # Fetch all the add-on sources in parallel.
     workers = [
         get_addon_worker(addon_location, target_folder, temp_folder)
@@ -377,7 +370,6 @@ def create_repository(
         
     #cleanup temp files
     cleanup_dir(temp_folder)
-    print "ici"
 
 def main():
     parser = argparse.ArgumentParser(
@@ -430,7 +422,8 @@ def main():
     checksum_path = (
         os.path.abspath(args.checksum) if args.checksum is not None
         else os.path.join(data_path, 'addons.xml.md5'))
-    create_repository(args.addon, data_path, info_path, checksum_path, args.compressed)
+    create_repository(
+        args.addon, data_path, info_path, checksum_path, args.compressed)
 
 
 if __name__ == "__main__":

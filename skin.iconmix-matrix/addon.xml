@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.iconmix-matrix" version="20.10.180" name="iconmix (Matrix)" provider-name="telexxingou">
+	<requires>
+		<import addon="xbmc.gui" version="5.15.0"/>
+		<import addon="service.library.data.provider" version="0.1.5"/>
+		<import addon="script.skinshortcuts" version="1.0.17"/>
+
+		<import addon="script.iconmixtoolsmatrix" version="21.03.210"/>
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="resource.images.languageflags.colour" version="0.0.4"/>		
+		<import addon="resource.images.recordlabels.white" version="0.0.6"/>
+		
+		
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+			<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_US">A Icon/Text Skin</summary>
+		<description lang="en_US">Kodi skin using Icon/Text presentation and providing some nice extended features</description>
+		<platform>all</platform>
+		<license>Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) United States License</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=290236</forum>
+		<website>---</website>
+		<source>-</source>		
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot01.jpg</screenshot>			
+		</assets>
+	</extension>
+</addon>
