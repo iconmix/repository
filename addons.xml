@@ -56,4 +56,31 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
+</addon><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="21.03.240">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="xbmc.addon" version="16.0.0" />
+    <import addon="script.module.simplejson" version="3.3.0" />
+  </requires>
+  <extension library="plugin.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension library="plugin.py" point="xbmc.python.pluginsource" />
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">script.iconmixtools</summary>
+    <summary lang="en">tools for IconMix skin</summary>
+    <description>provides some tools functions for my IconMix( Jarvis.Krypton.Leia) skin</description>
+    <language />
+    <platform>all</platform>
+    <license>GPL v2.0</license>
+    <forum />
+    <website />
+    <news>v20.030.240 [fix] youtube trailer</news>
+    <source>-</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon></addons>
