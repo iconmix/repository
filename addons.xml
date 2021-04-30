@@ -56,10 +56,16 @@
 			<screenshot>resources/screenshot01.jpg</screenshot>			
 		</assets>
 	</extension>
-</addon><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="21.03.240">
+</addon><addon id="script.iconmixtools" name="script.iconmixtools" provider-name="telexxingou" version="21.04.290">
   <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-    <import addon="xbmc.addon" version="16.0.0" />
+    <dir maxversion="18.9.0">
+		<import addon="xbmc.python" version="2.24.0" />
+		</dir>
+		<dir maxversion="18.9.700">
+		<import addon="xbmc.python" version="3.0.0" />
+		</dir>
+		<import addon="xbmc.addon" version="16.0.0" />
+
     <import addon="script.module.simplejson" version="3.3.0" />
   </requires>
   <extension library="plugin.py" point="xbmc.python.script">
@@ -76,7 +82,7 @@
     <license>GPL v2.0</license>
     <forum />
     <website />
-    <news>v20.030.240 [fix] youtube trailer</news>
+    <news>v21.04.290 : compatible python 2 et 3</news>
     <source>-</source>
     <assets>
       <icon>icon.png</icon>
